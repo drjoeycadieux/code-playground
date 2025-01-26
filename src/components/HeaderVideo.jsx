@@ -1,12 +1,12 @@
 import React from 'react';
-import './HeaderVideo.css';
+import '../HeaderVideo.css';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="video-background">
         <video className="video" autoPlay loop muted playsInline>
-          <source src="your-video.mp4" type="video/mp4" />
+          <source src="./assets/code.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
