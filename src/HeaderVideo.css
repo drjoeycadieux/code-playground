@@ -1,0 +1,41 @@
+/* Header.css */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide anything overflowing */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Position behind content */
+}
+
+.video {
+  object-fit: cover; /* Make the video cover the area */
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensure overlay is on top of the video */
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 1.2em;
+}
